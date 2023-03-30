@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div class="container pt-5">
+        <div class="row">
+
+        <h1>Prediction Results</h1>
+
+            <table class="table">
+                <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Pregnancies</th>
+                <th scope="col">Glucose</th>
+                <th scope="col">Blood Pressure</th>
+                <th scope="col">Skin Thickness</th>
+                <th scope="col">Insulin</th>
+                <th scope="col">BMI</th>
+                <th scope="col">Diabetes Pedigree Function</th>
+                <th scope="col">Age</th>
+                <th scope="col">Prediction</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for data in dataset %}
+                    <tr>
+                    <th scope="row">{{ data.id }}</th>
+                    <td>{{ data.pregnancies }}</td>
+                    <td>{{ data.glucose }}</td>
+                    <td>{{ data.blood_pressure }}</td>
+                    <td>{{ data.skin_thickness }}</td>
+                    <td>{{ data.insulin }}</td>
+                    <td>{{ data.bmi }}</td>
+                    <td>{{ data.diabetes_pedigree_function }}</td>
+                    <td>{{ data.age }}</td>
+                    <td>{{ data.classification }}</td>
+                    </tr>
+                {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
