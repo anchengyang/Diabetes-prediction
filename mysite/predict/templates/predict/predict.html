@@ -40,37 +40,37 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="pregnancies">Pregnancies</label>
-                    <input type="number" step="0.1" class="form-control" id="pregnancies" placeholder="" required>
+                    <input type="number" min="0" step="1" class="form-control" id="pregnancies" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" placeholder="" required>
                 </div>
                 <div class="form-group">
                     <label for="glucose">Glucose</label>
-                    <input type="number" step="0.1" class="form-control" id="glucose" placeholder="" required>
+                    <input type="number" min="0" step="0.1" class="form-control" id="glucose" placeholder="" required>
                 </div>
                 <div class="form-group">
                     <label for="blood_pressure">Blood Pressure</label>
-                    <input type="number" step="0.1" class="form-control" id="blood_pressure" placeholder="" required>
+                    <input type="number" min="0" step="0.1" class="form-control" id="blood_pressure" placeholder="" required>
                 </div>
                 <div class="form-group">
                     <label for="skin_thickness">Skin Thickness</label>
-                    <input type="number" step="0.1" class="form-control" id="skin_thickness" placeholder="" required>
+                    <input type="number" min="0" step="0.1" class="form-control" id="skin_thickness" placeholder="" required>
                 </div>
                 <div class="form-group">
                     <label for="insulin">Insulin</label>
-                    <input type="number" step="0.1" class="form-control" id="insulin" placeholder="" required>
+                    <input type="number" min="0" step="0.1" class="form-control" id="insulin" placeholder="" required>
                 </div>
                 <div class="form-group">
                     <label for="bmi">BMI</label>
-                    <input type="number" step="0.1" class="form-control" id="bmi" placeholder="" required>
+                    <input type="number" min="0" step="0.1" class="form-control" id="bmi" placeholder="" required>
                 </div>
                 <div class="form-group">
                     <label for="diabetes_pedigree_function">Diabetes Pedigree Function</label>
-                    <input type="number" step="0.001" class="form-control" id="diabetes_pedigree_function" placeholder="" required>
+                    <input type="number" min="0" step="0.001" class="form-control" id="diabetes_pedigree_function" placeholder="" required>
                 </div>
                 <div class="form-group">
                     <label for="age">Age</label>
-                    <input type="number" step="1" class="form-control" id="age" placeholder="" required>
+                    <input type="number" min="0" step="1" class="form-control" id="age" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" placeholder="" required>
                 </div>
-                <button type="submit" value="Submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Submit</button>
+                <button type="submit" value="Submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="margin-bottom: 50px;">Submit</button>
             </form>
         </div>
     </div>
