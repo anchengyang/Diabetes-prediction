@@ -19,3 +19,25 @@ You can view past entries in the `DB` tab
 ## Docker:
 
 I have also created a Docker repo to store this app. The repo can be found [here](https://hub.docker.com/r/anchengyang/diabetes-django)
+
+### Step 1
+
+Go to Docker Hub and create an [account](https://hub.docker.com/)
+
+### Step 2
+
+Go to my [repo](https://hub.docker.com/repository/docker/anchengyang/diabetes-django/general) and pull the docker image with the following command in your terminal
+
+`docker pull anchengyang/diabetes-django`
+
+The image should be pulled and you can verify by entering `docker images` to view your images
+
+### Step 3
+
+Run the docker image by running this command in the terminal
+
+`docker run -p 8000:8000 anchengyang/diabetes-django`
+
+### Step 4
+
+Click on the generated link to open a new window in your browser that will launch the django application!
