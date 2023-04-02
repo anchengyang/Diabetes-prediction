@@ -30,7 +30,7 @@ Go to my [repo](https://hub.docker.com/repository/docker/anchengyang/diabetes-dj
 
 `docker pull anchengyang/diabetes-django`
 
-The image should be pulled and you can verify by entering `docker images` in your terminal to view your images
+The docker image should be pulled and you can verify by entering `docker images` in your terminal to view your images
 
 ### Step 3
 
