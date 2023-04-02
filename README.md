@@ -36,8 +36,12 @@ The image should be pulled and you can verify by entering `docker images` in you
 
 Run the docker image by running this command in the terminal
 
-`docker run -p 8000:8000 anchengyang/diabetes-django`
+`docker run -p 8000:8000 anchengyang/diabetes-django:latest`
 
 ### Step 4
 
 Open a new window in your browser and go to `http://localhost:8000/` to launch the django application!
+
+OR
+
+Go to Docker Desktop and open your running container!
