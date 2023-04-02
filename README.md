@@ -40,4 +40,4 @@ Run the docker image by running this command in the terminal
 
 ### Step 4
 
-Click on the generated link to open a new window in your browser that will launch the django application!
+Open a new window in your browser and go to `http://localhost:8000/` to launch the django application!
