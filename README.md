@@ -34,9 +34,9 @@ The docker image should be pulled and you can verify by entering `docker images`
 
 ### Step 3
 
-Run the docker image by running this command in the terminal
+Run the docker image in the background by running this command in the terminal
 
-`docker run -p 8000:8000 anchengyang/diabetes-django:latest`
+`docker run -d -p 8000:8000 anchengyang/diabetes-django:latest`
 
 ### Step 4
 
