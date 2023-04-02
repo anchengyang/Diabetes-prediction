@@ -15,3 +15,7 @@ Step 3: A window will pop up to show the values that you keyed in followed by th
 You can view past entries in the `DB` tab
 
 ![image](https://user-images.githubusercontent.com/65301406/229080559-d98cad9d-facd-4069-86e0-3b072d0d274a.png)
+
+## Docker:
+
+I have also created a Docker repo to store this app. The repo can be found [here](https://hub.docker.com/r/anchengyang/diabetes-django)
